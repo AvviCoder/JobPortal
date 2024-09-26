@@ -1,15 +1,15 @@
 import React from 'react';
 
-const FavoriteJobs = ({ favoriteJobs }) => {
+const FavoriteJobs = ({ favoriteJobs, onRemoveJob }) => {
   return (
     <div>
-      <h2>Favorite Jobs</h2>
       {favoriteJobs.length > 0 ? (
-        favoriteJobs.map((job, index) => (
-          <div key={index}>
+        favoriteJobs.map((job) => (
+          <div key={job.id}>
             <h3>{job.title}</h3>
             <p>{job.company}</p>
             <p>{job.location}</p>
+            <button onClick={() => onRemoveJob(job)}>Remove</button>
           </div>
         ))
       ) : (
