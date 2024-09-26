@@ -40,3 +40,105 @@
     transform: rotate(360deg);
   }
 }
+
+/* Basic styling for the container */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Title styling */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Searchbar styling */
+input[type="text"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Button styling */
+button {
+  background-color: #2980b9;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+/* JobList styling */
+.job-list {
+  margin-top: 20px;
+}
+
+.job-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.job-item:hover {
+  background-color: #f9f9f9;
+  border-color: #ccc;
+}
+
+/* Job details */
+.job-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.job-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Favorites section */
+.favorite-jobs {
+  margin-top: 30px;
+}
+
+.favorite-jobs h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.favorite-jobs p {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Map component */
+.map-component {
+  margin: 20px 0;
+}
+
+.map-component iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+
